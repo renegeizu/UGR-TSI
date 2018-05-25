@@ -34,13 +34,16 @@
 
 (:task transport-person
  :parameters (?p - person ?c - city)
-			 (:method Case1 :precondition (at ?p ?c) :tasks ())
-			 (:method Case2 :precondition (and (at ?p - person ?c1 - city) (at ?a - aircraft ?c1 - city)) :tasks ((board ?p ?a ?c1) (mover-avion ?a ?c1 ?c) (debark ?p ?a ?c )))
+			 (:method Case1 :precondition (at ?p ?c)
+							:tasks ())
+			 (:method Case2 :precondition (and (at ?p - person ?c1 - city) (at ?a - aircraft ?c1 - city))
+							:tasks ((board ?p ?a ?c1) (mover-avion ?a ?c1 ?c) (debark ?p ?a ?c )))
 )
 
 (:task mover-avion
  :parameters (?a - aircraft ?c1 - city ?c2 -city)
-			 (:method fuel-suficiente :precondition (hay-fuel ?a ?c1 ?c2) :tasks ((fly ?a ?c1 ?c2)))
+			 (:method fuel-suficiente :precondition (hay-fuel ?a ?c1 ?c2)
+									  :tasks ((fly ?a ?c1 ?c2)))
 )
  
 (:import "Primitivas-Zenotravel.pddl"))
