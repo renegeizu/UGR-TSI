@@ -13,3 +13,8 @@ Practica 02
 --------------------
 + Dominio y Problemas de Planificacion Clasica (PDDL)
 + Uso: ff –p <dir_dominios_y_problemas> -o dominio.pddl –f problema.pddl
+
+
+Practica 03
+--------------------
++ Dominio y Problemas de Planificacion HTN (ZenoTravel)
