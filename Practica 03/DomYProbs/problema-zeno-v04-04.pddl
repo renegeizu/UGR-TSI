@@ -226,6 +226,6 @@
 	(transport-person p13 Cordoba)
 	(transport-person p14 Malaga)
 	(transport-person p15 Cordoba)
-)
+))
 
 )

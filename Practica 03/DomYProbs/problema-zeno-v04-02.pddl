@@ -226,6 +226,6 @@
 	(transport-person p13 Cordoba)
 	(transport-person p14 Cordoba)
 	(transport-person p15 Cordoba)
-)
+))
 
 )
